@@ -1,7 +1,7 @@
 #include <string>
 #include <algorithm>
 
-std::string decimalToBinary(int decimalValue) {
+int decimalToBinary(int decimalValue) {
 std::string binary = "";
   while (decimalValue > 0) {
     int remainder = decimalValue % 2;
@@ -11,5 +11,7 @@ std::string binary = "";
 
   std::reverse(binary.begin(), binary.end());
   
-return binary;
+return std::stoi(binary);
 }
+
+//std::int binaryToDecimal(int binary) {

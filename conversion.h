@@ -1,5 +1,6 @@
 #ifndef CONVERSION
 #define CONVERSION
-std::string decimalToBinary(int decimalValue);
+int decimalToBinary(int decimalValue);
+// std::string binaryToDecimal(int binaryValue);
 
 #endif
